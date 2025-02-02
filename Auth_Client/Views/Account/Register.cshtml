@@ -1,0 +1,15 @@
+﻿@using Auth_Data.Models
+@model RegisterModel
+
+<h2>Register</h2>
+<form method="post">
+    <label>Full Name</label>
+    <input type="text" asp-for="FullName" required />
+    <label>Email</label>
+    <input type="email" asp-for="Email" required />
+    <label>Password</label>
+    <input type="password" asp-for="Password" required />
+    <label>Confirm Password</label>
+    <input type="password" asp-for="ConfirmPassword" required />
+    <button type="submit">Register</button>
+</form>
